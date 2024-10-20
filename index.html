@@ -39,7 +39,7 @@
             <img src="assets/coin.png" alt="" class="mt-2 mr-2">
           </div>
 
-          <h1 id="total-amount" class="font-bold mt-2 text-[18px]">10000 BDT</h1>
+          <h1 class="font-bold mt-2 text-[18px]"><span id="total-amount">30000</span>&nbsp; BDT</h1>
         </div>
 
       </div>
@@ -47,15 +47,15 @@
 
     <section class="hero flex justify-center mt-10 pb-6">
 
-      <button class="bg-[#B4F461] px-6 py-2 rounded-lg font-semibold text-[20px] mr-3">Donation</button>
+      <button id="donation-id" class="bg-[#B4F461] px-6 py-2 rounded-lg font-semibold text-[20px] mr-3">Donation</button>
 
-      <button class="border border-gray-200 px-6 py-2 rounded-lg font-semibold text-[20px] btn">History</button>
+      <button id="history-id" class="border border-gray-200 px-6 py-2 rounded-lg font-semibold text-[20px] btn">History</button>
 
     </section>
 
   </header>
 
-  <main>
+  <main id="hero-section">
 
     <section class="container mx-auto mt-11">
 
@@ -70,10 +70,10 @@
 
             <div class="btn">
               <img src="assets/coin.png" alt="">
-              <h1>0 BDT</h1>
+              <h1> <span id="first-innerText">0</span> BDT</h1>
             </div>
 
-            <h1 class="text-[20px] font-bold mt-3">Donate for Flood at Noakhali, Bangladesh</h1>
+            <h1 id="first-input-text" class="text-[20px] font-bold mt-3">Donate for Flood at Noakhali, Bangladesh</h1>
             <p class="py-4">
               The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
               help provide essential supplies and to those affected by this disaster. Every contribution, big or
@@ -81,14 +81,16 @@
               the lives of those in need.
             </p>
 
-            <input type="text" placeholder="Write Donation Amount"
+            <input id="donate-input-1" type="text" placeholder="Write Donation Amount"
               class="w-full p-2 outline-none border border-gray-100">
 
             <div class="modal_box">
 
               <!-- Open the modal using ID.showModal() method -->
-              <button class="btn bg-[#B4F461] w-full hover:bg-[#B4F461] font-semibold text-[20px] mt-3"
+              <button id="donate-btn-1"
+                class="btn bg-[#B4F461] w-full hover:bg-[#B4F461] font-semibold text-[20px] mt-3"
                 onclick="my_modal_5.showModal()">Donate Now</button>
+
               <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                 <div class="modal-box">
                   <h3 class="text-3xl font-semibold text-center">Congrates!</h3>
@@ -130,7 +132,7 @@
 
             <div class="btn">
               <img src="assets/coin.png" alt="">
-              <h1>600 BDT</h1>
+              <h1><span id="second-innerText">600</span> BDT</h1>
             </div>
 
             <h1 class="text-[20px] font-bold mt-3">Donate for Flood Relief in Feni,Bangladesh</h1>
@@ -142,13 +144,13 @@
               donating today to assist those in urgent need.
             </p>
 
-            <input type="text" placeholder="Write Donation Amount"
+            <input id="donate-input-2" type="text" placeholder="Write Donation Amount"
               class="w-full p-2 outline-none border border-gray-100">
 
             <div class="modal_box">
 
               <!-- Open the modal using ID.showModal() method -->
-              <button class="btn bg-[#B4F461] w-full hover:bg-[#B4F461] font-semibold text-[20px] mt-3"
+              <button id="donate-btn-2" class="btn bg-[#B4F461] w-full hover:bg-[#B4F461] font-semibold text-[20px] mt-3"
                 onclick="my_modal_4.showModal()">Donate Now</button>
               <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
                 <div class="modal-box">
@@ -190,7 +192,7 @@
 
             <div class="btn">
               <img src="assets/coin.png" alt="">
-              <h1>2400 BDT</h1>
+              <h1><span id="third-innerText">2400</span>BDT</h1>
             </div>
 
             <h1 class="text-[20px] font-bold mt-3">Aid for Injured in the Quota Movement</h1>
@@ -202,13 +204,13 @@
               donating today to assist those in urgent need.
             </p>
 
-            <input type="text" placeholder="Write Donation Amount"
+            <input id="donate-input-3" type="text" placeholder="Write Donation Amount"
               class="w-full p-2 outline-none border border-gray-100">
 
             <div class="modal_box">
 
               <!-- Open the modal using ID.showModal() method -->
-              <button class="btn bg-[#B4F461] w-full hover:bg-[#B4F461] font-semibold text-[20px] mt-3"
+              <button id="donate-btn-3" class="btn bg-[#B4F461] w-full hover:bg-[#B4F461] font-semibold text-[20px] mt-3"
                 onclick="my_modal_3.showModal()">Donate Now</button>
               <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
                 <div class="modal-box">
@@ -239,19 +241,19 @@
 
   </main>
 
+
+  <main id="history-section" class="m-6">
+    <section id="add-parent-div">
+
+    </section>
+
+
+  </main>
+
   <footer class="bg-[#F9F7F3] pt-14 pb-14">
 
   </footer>
 
-  <section>
-    <div class="container mx-auto border p-6 rounded-lg">
-
-      <p class="pb-3 font-bold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, libero?</p>
-
-      <p class="p-1 ms-1 bg-gray-100 rounded-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, quos?</p>
-
-    </div>
-  </section>
 
 
   <script src="js/utilities.js"></script>
