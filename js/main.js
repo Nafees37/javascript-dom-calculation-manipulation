@@ -3,7 +3,7 @@
 document.getElementById("donate-btn-1")
   .addEventListener("click", function () {
 
-    // Function Aassing Argument Start
+    // Function Assign Argument Start
 
     const parentTotalAmount = getElementInnerTextValueById("total-amount");
 
@@ -11,7 +11,7 @@ document.getElementById("donate-btn-1")
 
     const firstInnerTextValue = getElementInnerTextValueById("first-innerText");
 
-    // Function Aassing Argument End
+    // Function Assign Argument End
 
 
     // Input Validation Check Start
@@ -52,7 +52,7 @@ document.getElementById("donate-btn-1")
 
     const parentDiv = document.getElementById("add-parent-div");
 
-    const fristInput = document.getElementById("first-input-text").innerText;
+    const firstInput = document.getElementById("first-input-text").innerText;
 
     const dateFun = new Date();
 
@@ -61,7 +61,7 @@ document.getElementById("donate-btn-1")
     childDiv.classList.add("container", "mx-auto", "border", "p-6", "rounded-lg", "mb-4");
 
     childDiv.innerHTML = `    
-        <p class="pb-3 font-bold">${firstInputValue} ${fristInput}</p>  
+        <p class="pb-3 font-bold">${firstInputValue} ${firstInput}</p>  
         <p class="p-1 ms-1 bg-gray-100 rounded-lg">${dateFun}</p>    
     `;
 
@@ -80,7 +80,7 @@ document.getElementById("donate-btn-1")
 document.getElementById("donate-btn-2")
   .addEventListener("click", function () {
 
-    // Function Aassing Argument Start
+    // Function Assign Argument Start
 
     const parentTotalAmount = getElementInnerTextValueById("total-amount");
 
@@ -88,7 +88,7 @@ document.getElementById("donate-btn-2")
 
     const secondInnerTextValue = getElementInnerTextValueById("second-innerText");
 
-    // Function Aassing Argument End
+    // Function Assign Argument End
 
 
     // Input Validation Check Start
@@ -141,7 +141,7 @@ document.getElementById("donate-btn-2")
         <p class="pb-3 font-bold">${secondInputValue} ${secondInput}</p>  
         <p class="p-1 ms-1 bg-gray-100 rounded-lg">${dateFun}</p>    
     `;
-    
+
     parentDiv.appendChild(childDiv);
 
     // Add Money Transaction History Button End
@@ -157,7 +157,7 @@ document.getElementById("donate-btn-2")
 document.getElementById("donate-btn-3")
   .addEventListener("click", function () {
 
-    // Function Aassing Argument Start
+    // Function Assign Argument Start
 
     const parentTotalAmount = getElementInnerTextValueById("total-amount");
 
@@ -165,7 +165,7 @@ document.getElementById("donate-btn-3")
 
     const thirdInnerTextValue = getElementInnerTextValueById("third-innerText");
 
-    // Function Aassing Argument End
+    // Function Assign Argument End
 
 
     // Input Validation Check Start
@@ -219,7 +219,7 @@ document.getElementById("donate-btn-3")
         <p class="pb-3 font-bold">${thirdInputValue} ${thirdInput}</p>  
         <p class="p-1 ms-1 bg-gray-100 rounded-lg">${dateFun}</p>    
     `;
-    
+
     parentDiv.appendChild(childDiv);
 
     // Add Money Transaction History Button End
@@ -240,14 +240,12 @@ document.getElementById("donation-id")
 
     hideShowButton("hero-section")
 
-
     // Donation Button Color Change Start
 
     // Color Add Button Start
 
     // let donationButtonColor = document.getElementById("donation-id")
     // donationButtonColor.classList.add("bg-[#B4F461]", "hover:bg-[#B4F461]");
-
 
     clickButtonColorAddFun("donation-id")
 
@@ -300,7 +298,7 @@ document.getElementById("history-id")
 
     // Color Remove Button End
 
-     // History Button Color Change Start
+    // History Button Color Change Start
 
   });
 

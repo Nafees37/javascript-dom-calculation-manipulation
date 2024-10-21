@@ -1,4 +1,4 @@
-// Share Imput Function Start
+// Share Input Function Start
 
 function getElementInputValueById(id) {
 
@@ -10,7 +10,7 @@ function getElementInputValueById(id) {
 
 }
 
-// Share Imput Function End
+// Share Input Function End
 
 
 
@@ -30,10 +30,9 @@ function getElementInnerTextValueById(id) {
 
 
 
-
 // Share Donation & History Button Start
 
-function hideShowButton (id) {
+function hideShowButton(id) {
 
   document.getElementById("history-section").classList.add("hidden");
   document.getElementById("hero-section").classList.add("hidden");
@@ -43,7 +42,6 @@ function hideShowButton (id) {
 }
 
 // Share Donation & History Button End
-
 
 
 
@@ -72,4 +70,3 @@ function clickButtonColorRemoveFun(id) {
 
 
 // Click Button Color Change End
-
