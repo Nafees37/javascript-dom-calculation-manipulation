@@ -31,7 +31,7 @@ function getElementInnerTextValueById(id) {
 
 
 
-// Share History Button Start
+// Share Donation & History Button Start
 
 function hideShowButton (id) {
 
@@ -42,5 +42,34 @@ function hideShowButton (id) {
 
 }
 
-// Share History Button End
+// Share Donation & History Button End
+
+
+
+
+// Click Button Color Change Start
+
+
+// Color Add Button Start
+
+function clickButtonColorAddFun(id) {
+  const colorAddButton = document.getElementById(id);
+  colorAddButton.classList.add("bg-[#B4F461]", "hover:bg-[#B4F461]");
+}
+
+// Color Add Button End
+
+
+// Color Remove Button Start
+
+function clickButtonColorRemoveFun(id) {
+  const colorRemoveButton = document.getElementById(id);
+  colorRemoveButton.classList.remove("bg-[#B4F461]", "hover:bg-[#B4F461]");
+  colorRemoveButton.classList.add("border-gray-200", "btn");
+}
+
+// Color Remove Button End
+
+
+// Click Button Color Change End
 

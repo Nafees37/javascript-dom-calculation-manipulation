@@ -47,27 +47,27 @@ document.getElementById("donate-btn-1")
     // First Input Calculation By Website End
 
 
-    const parentDiv = document.getElementById("add-parent-div");
 
+    // Add Money Transaction History Button Start
+
+    const parentDiv = document.getElementById("add-parent-div");
 
     const fristInput = document.getElementById("first-input-text").innerText;
 
     const dateFun = new Date();
 
 
-
     const childDiv = document.createElement("div");
     childDiv.classList.add("container", "mx-auto", "border", "p-6", "rounded-lg", "mb-4");
 
-    childDiv.innerHTML = `
-    
-        <p class="pb-3 font-bold">${firstInputValue} ${fristInput}</p>
-  
-        <p class="p-1 ms-1 bg-gray-100 rounded-lg">${dateFun}</p>
-    
-    `
+    childDiv.innerHTML = `    
+        <p class="pb-3 font-bold">${firstInputValue} ${fristInput}</p>  
+        <p class="p-1 ms-1 bg-gray-100 rounded-lg">${dateFun}</p>    
+    `;
 
     parentDiv.appendChild(childDiv);
+
+    // Add Money Transaction History Button End
 
   });
 
@@ -123,6 +123,29 @@ document.getElementById("donate-btn-2")
 
     // Second Input Calculation By Website End
 
+
+
+    // Add Money Transaction History Button Start
+
+    const parentDiv = document.getElementById("add-parent-div");
+
+    const secondInput = document.getElementById("second-input-text").innerText;
+
+    const dateFun = new Date();
+
+
+    const childDiv = document.createElement("div");
+    childDiv.classList.add("container", "mx-auto", "border", "p-6", "rounded-lg", "mb-4");
+
+    childDiv.innerHTML = `    
+        <p class="pb-3 font-bold">${secondInputValue} ${secondInput}</p>  
+        <p class="p-1 ms-1 bg-gray-100 rounded-lg">${dateFun}</p>    
+    `;
+    
+    parentDiv.appendChild(childDiv);
+
+    // Add Money Transaction History Button End
+
   });
 
 // Second Input Working End
@@ -177,14 +200,40 @@ document.getElementById("donate-btn-3")
 
     // Third Input Calculation By Website End
 
+
+
+
+    // Add Money Transaction History Button Start
+
+    const parentDiv = document.getElementById("add-parent-div");
+
+    const thirdInput = document.getElementById("third-input-text").innerText;
+
+    const dateFun = new Date();
+
+
+    const childDiv = document.createElement("div");
+    childDiv.classList.add("container", "mx-auto", "border", "p-6", "rounded-lg", "mb-4");
+
+    childDiv.innerHTML = `    
+        <p class="pb-3 font-bold">${thirdInputValue} ${thirdInput}</p>  
+        <p class="p-1 ms-1 bg-gray-100 rounded-lg">${dateFun}</p>    
+    `;
+    
+    parentDiv.appendChild(childDiv);
+
+    // Add Money Transaction History Button End
+
   });
 
 // Third Input Working End
 
 
 
-// History Button Start
+// Donation & History Button Working Start
 
+
+// Donation Button Start
 
 document.getElementById("donation-id")
   .addEventListener("click", function () {
@@ -192,13 +241,70 @@ document.getElementById("donation-id")
     hideShowButton("hero-section")
 
 
+    // Donation Button Color Change Start
+
+    // Color Add Button Start
+
+    // let donationButtonColor = document.getElementById("donation-id")
+    // donationButtonColor.classList.add("bg-[#B4F461]", "hover:bg-[#B4F461]");
+
+
+    clickButtonColorAddFun("donation-id")
+
+    // Color Add Button End
+
+
+    // Color Remove Button Start
+
+    // let historyButtonColor = document.getElementById("history-id")
+    // historyButtonColor.classList.remove("bg-[#B4F461]", "hover:bg-[#B4F461]");
+    // historyButtonColor.classList.add("border-gray-200", "btn");
+
+    clickButtonColorRemoveFun("history-id")
+
+    // Color Remove Button End
+
+    // Donation Button Color Change End
+
   });
+
+// Donation Button End
+
+
+// History Button Start
 
 document.getElementById("history-id")
   .addEventListener("click", function () {
 
     hideShowButton("history-section")
 
+    // History Button Color Change Start
+
+    // Color Add Button Start
+
+    // let historyButtonColor = document.getElementById("history-id")
+    // historyButtonColor.classList.add("bg-[#B4F461]", "hover:bg-[#B4F461]");
+
+    clickButtonColorAddFun("history-id")
+
+    // Color Add Button End
+
+
+    // Color Remove Button Start
+
+    // let donationButtonColor = document.getElementById("donation-id")
+    // donationButtonColor.classList.remove("bg-[#B4F461]", "hover:bg-[#B4F461]");
+    // donationButtonColor.classList.add("border-gray-200", "btn");
+
+    clickButtonColorRemoveFun("donation-id")
+
+    // Color Remove Button End
+
+     // History Button Color Change Start
+
   });
 
 // History Button End
+
+
+// Donation & History Button Working End
